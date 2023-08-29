@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pixiv-fav-export"
+version = "0.1.0"
+description = ""
+authors = ["myl7 <myl@myl.moe>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+PixivPy3 = "^3.7.2"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.4"
+flake8 = "^6.1.0"
+jupyterlab = "^4.0.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
