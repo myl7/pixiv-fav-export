@@ -1,20 +1,12 @@
-[tool.poetry]
+[project]
 name = "pixiv-fav-export"
 version = "0.1.0"
-description = ""
-authors = ["myl7 <myl@myl.moe>"]
-license = "Apache-2.0"
+description = "Export your favorited illustions from Pixiv"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.11"
-PixivPy3 = "^3.7.2"
-
-[tool.poetry.group.dev.dependencies]
-autopep8 = "^2.0.4"
-flake8 = "^6.1.0"
-jupyterlab = "^4.0.5"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.10" # For "|" typing operator
+dependencies = [
+    "gppt>=4.1.0",
+    "ipykernel>=6.29.5",
+    "pixivpy3>=3.7.5",
+    "python-dotenv>=1.0.1",
+]
